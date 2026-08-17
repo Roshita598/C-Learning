@@ -1,0 +1,10 @@
+PROGRAM ?= firstprogram
+
+$(PROGRAM): $(PROGRAM).cpp
+	clang++ $(PROGRAM).cpp -o $(PROGRAM)
+
+run: $(PROGRAM)
+	./$(PROGRAM)
+
+clean:
+	rm -f $(PROGRAM)
